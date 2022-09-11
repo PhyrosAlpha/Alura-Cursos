@@ -1,0 +1,15 @@
+Aula 3 - Alura - Relacionamentos com coleções.
+
+Programar defensivamente.
+
+Método que torna a lista apenas para leituram proibindo qualquer tentativa de
+mudança ou alteração.
+Collections.unmodifiableList(list);
+
+LinkedList - Melhoram perfomance na lista muito longas??
+
+
+
+ArrayList - A falha dessa lista é que quando vc coloca um elemento no meio da lista
+ela vai percorrer toda a estrutura dps daquele elemento mudando o index de cada um
+por um. 

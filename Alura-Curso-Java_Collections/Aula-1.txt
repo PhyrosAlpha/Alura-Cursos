@@ -1,0 +1,40 @@
+Aula 1 - Alura - Collections em Java
+
+
+ArrayList<E>
+O mais clássico do tipo genérico.
+
+Métodos mais comuns:
+.add(elemento)
+.addAll(...elementos)
+.remove(index_elemento)
+
+toString de uma ArrayList é a iteração de todos os seus elementos
+concatenando os resultado separados por uma vírgula.
+
+
+
+Formas de iterações:
+
+Atraves do índice
+utilizar o for tradicional
+
+Utilizando o for criado para collections
+for( type element : list )
+
+foreach (Introduzido no java 8)
+.forEach(elemento -> {action});
+
+lambda - para cada objeto ele vai executar a ação
+dentro dos argumentos do método.
+
+Parece ser um método de iteração mais eficaz. Paralelismo/Imutabilidade
+
+
+
+
+
+Collections
+Métodos estáticos que auxiliam para trabalhar com listas em geral.
+
+Collections.sort(list);

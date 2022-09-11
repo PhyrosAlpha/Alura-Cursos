@@ -1,0 +1,47 @@
+Aula 2 - Alura - Lista de Objetos
+
+.toString do  ArrayList retorna
+os objetos na lista, porém se for um objeto
+objeto criado a partir de uma classe é necessário
+alterar o seu toString para que ele seja legivel da forma como desejado.
+
+
+
+Método compareTo()
+Assinar a interface Comparable<? super T>
+
+Para que os objetos personalizados sejam ordenados utilizando a classe estática
+Collection.sort(), é necessário que os mesmos em sua estrutura implementem a
+interface Comparable e sobreescrevam o método compareTo, o mesmo deve retornar
+
+-1: dentro do critério estabelecido, isso indica que a ordem entre os dois objetos devem
+ser alterada
+
+ou
+
+0: caso o critério não seja atendido, entende-se que os dois são iguais e a ordem não
+é alterada
+
+Exemplo:
+
+	@Override
+	public int compareTo(TagCloudCounter o) {
+		if(this.getCount() > o.getCount()) {
+			return -1;
+		}	
+		return 0;
+	}
+
+
+
+
+Quando houver mais de um critério de ordenação:
+Collections.sort(list, Comparator.comparing(Aula::getCount));
+
+ou
+
+list.sort(Comparator.comparing(Aula::getCount)));
+
+-- / (Aula::getTempo)) \ --
+Que método que deve usado para tirar aquele valor e ordenar com acordo
+com a classe escolhida.
