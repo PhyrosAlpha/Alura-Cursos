@@ -8,8 +8,15 @@ Collections.unmodifiableList(list);
 
 LinkedList - Melhoram perfomance na lista muito longas??
 
-
-
 ArrayList - A falha dessa lista é que quando vc coloca um elemento no meio da lista
 ela vai percorrer toda a estrutura dps daquele elemento mudando o index de cada um
-por um. 
+por um.
+
+Polimorfismo
+Na Aula é deixado claro o quanto é importante definir a lista com tipo abstrato List,
+pois não existe motivo para ser específico, todos os métodos necessário foram definidos
+na interface, portanto qualquer Classe que processe lista que assinar esse contrato (ou implementar a interface)
+deve por obrigação implementar o codigo que irá funcionar, é isso que importa no final das contas.
+
+Quanto mais genérico um tipo abstrato de uma variável mais flexível (Desacoplado) o código fica para receber
+futuras atualizações ou alterações.
