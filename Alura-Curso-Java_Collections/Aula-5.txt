@@ -1,0 +1,50 @@
+Aula 4 - Alura - O poder dos sets
+
+Hierarquia das Listas
+
+
+Iterable
+|
+|
+|
+\/
+Collection
+|
+|
+|
+\/
+Set, List<Object>, Queue, Deque
+
+
+
+
+
+Set (Implementa o Collections)
+
+HashSet<>()
+Implementa a interface Set
+Tabela de espalhamento - É estrutura de dados que utiliza
+uma estrutura interna eficiente, não sendo necessário
+fazer encadeamento, ou seja verificar todos os elementos da lista
+um por um.
+
+
+.add(element)
+Não tem garantia da ordem que os elementos vão ficar.
+
+Para acessar é necessário utilizar o foreach que itera todos
+os elementos.
+
+
+.contains
+Checa se o elemento está na lista.
+
+Características
+-Não garante ordem de elementos
+-Não aceita elementos(objetos) repetidos.
+-Velocidade e perfomance.
+
+
+
+
+Fonte: https://cursos.alura.com.br/course/java-collections/task/14189
