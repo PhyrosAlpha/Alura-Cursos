@@ -29,6 +29,10 @@ public class TestaCurso {
 			System.out.println(aulaSelected);	
 		}
 		
+		//Tempo Total
+		System.out.println(geografia.getTempoTotal());
+		System.out.println(geografia);
+		
 		//Lacra a lista, não permitindo que a mesma seja modificada, fica disponível
 		//Apenas para leitura
 		geografia.setAulas(Collections.unmodifiableList(geografia.getAulas()));

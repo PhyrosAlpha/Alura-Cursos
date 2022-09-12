@@ -1,4 +1,15 @@
 Aula 4 - Alura - Mais prática com relacionamentos
 
 
+Impede que os elementos sejam removidos ordenados, e que novos elementos sejam adicionados.
+Collections.unmodifiableList(list);
 
+
+Forma mais declarativa de obter o total de tempo das aulas.
+list.stream.mapToInt(Aula::getTempo).sum();
+
+
+Sempre checar se o java já possui um método que resolve o problema.
+A classe estática Collections, possui uma série de métodos que resolvem
+diversos problemas, como trocar dois elementos de uma lista de lugar,
+embaralhar os elementos de maneira aleatoria e etc...
