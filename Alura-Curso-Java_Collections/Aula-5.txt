@@ -1,4 +1,4 @@
-Aula 4 - Alura - O poder dos sets
+Aula 5 - Alura - O poder dos sets
 
 Hierarquia das Listas
 
@@ -43,6 +43,7 @@ Características
 -Não garante ordem de elementos
 -Não aceita elementos(objetos) repetidos.
 -Velocidade e perfomance.
+-Busca. remover e etc...
 
 
 

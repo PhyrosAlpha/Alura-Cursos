@@ -1,13 +1,17 @@
 package br.com.alura;
 
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 
 public class Curso {
 	
 	private String nome;
 	private String instrutor;
 	private List<Aula> aulas = new LinkedList<Aula>();
+	private Set<Aluno> alunos = new HashSet<>();
 	
 	public Curso(String nome, String instrutor) {
 		this.nome = nome;
@@ -16,7 +20,11 @@ public class Curso {
 	}
 	
 	public void addAula(Aula aula) {
-		this.getAulas().add(aula);
+		this.aulas.add(aula);
+	}
+	
+	public void matricular(Aluno aluno) {
+		this.alunos.add(aluno);
 	}
 	
 	public int getTempoTotal() {
@@ -25,6 +33,10 @@ public class Curso {
 			tempoTotal += aula.getTempo();
 		}
 		return tempoTotal;		
+	}
+	
+	public boolean exiteAluno(Aluno aluno) {
+		return this.alunos.contains(aluno);
 	}
 	
 	public String getNome() {
@@ -36,7 +48,12 @@ public class Curso {
 	}
 	
 	public List<Aula> getAulas() {
-		return aulas;
+		return Collections.unmodifiableList(this.aulas);
+	}
+	
+	
+	public Set<Aluno> getAlunos() {
+		return Collections.unmodifiableSet(this.alunos) ;
 	}
 	
 	public void setAulas(List<Aula> aulas) {

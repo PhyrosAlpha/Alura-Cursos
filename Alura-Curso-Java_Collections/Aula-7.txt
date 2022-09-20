@@ -1,0 +1,83 @@
+Aula 7 - Alura - Equals e hashcode
+
+
+.equals no Set
+
+
+Equals
+O equals compara referência, no caso do objeto é a referência onde
+o objeto está guardado.
+
+É normal delegar outras para os métodos da coleção que realizem funcionalidades mais
+específicas.
+
+Equals trabalham bem com os objetos String, porém com tipos abstrados, como objetos,
+é necessário alterar o equals para especificar "O que é igual a referência ou talvez o valor de algum atributo" ?.
+
+Portanto você define quando dois objetos são iguais ao sobreescrever o método equals da classe.
+
+
+
+Porém ao utilizar o .contains(elemento), não funcionará, pois o set funciona de uma maneira diferente
+, utilizando uma tabela de espalhamento em do método sequencial do list. A lógica do contains do set
+é diferente, utiliza o conceito de Hash ou número mágico pra performar a procura.
+
+
+Ao utilizar contains com List:
+
+Elemento1 é igual ao elemento 5?
+Elemento2 é igual ao elemento 5?
+Elemento3 é igual ao elemento 5?
+Elemento4 é igual ao elemento 5?
+Elemento5 é igual ao elemento 5?
+
+Sequencial.
+
+
+Ao utilizar containt com Set:
+
+
+Hash - 1
+Elemento1
+Elemento2
+
+Hash - 2
+Elemento3
+Elemento4
+
+Hash - 3
+Elemento5 é igual ao elemento 5?
+
+
+Ao definir a regra que o elemento5 vai ter a Hash 3, quando utilizar
+contains, o mesmo será procurado na tabela onde estão todos os elementos
+que possuem hash 3, diminuinto drasticamente o número de tentativas e
+comparações entre objetos.
+
+Para isso deve sobreescrever o método hashCode()
+Pra definir a regra de classificação de hashs entre os objetos.
+
+
+A regra importante é!!
+Ao sobreescrever o equals é necessário sobreescrever também o hashCode.
+
+
+
+É possível também utilizar a ferramenta do eclipse de geração de equals e hashcodes
+de forma que vc escolha os atributos que devem ser comparados entre objetos para
+decidir quando eles são iguais.
+
+Atalho: ctrl + 3
+
+Escreva: equals
+
+Selecione: hashcode() and equals()
+
+
+
+E seja feliz meu bom rapaz =D!
+
+
+
+
+

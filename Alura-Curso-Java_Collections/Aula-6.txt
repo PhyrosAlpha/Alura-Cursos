@@ -1,0 +1,39 @@
+Aula 6 - Alura - Aplicando o Set no modelo
+
+
+Como na aula anterior, o Set deve ser utilizado para objetivos
+especificos, assim como toda classe que implementa a interface Collection,
+entender como cada classe funciona e trabalha com a estrutura de dados
+é importante no momento de construir um programa, pois dependendo da situação
+uma estrutura pode ser mais eficaz que a outra, tudo irá depender das necessidades.
+
+
+Nesta Aula o professor salienta práticas importantes:
+
+-Construir os métodos da classe a medida que for sentindo a necessidade.
+-Sempre garantir um bom encapsulamento do objeto, ou seja esconder o "motor" ou o funcionamento
+interno da classe e só expor aquilo que realmente importa.
+
+
+Métodos apresentados nessa aula:
+
+Set<String> nomes = Collections.emptySet();
+Devolve um set vazio, segundo o instrutor do curso, pode ser bom utilizar esse método
+quando um curso é cancelado e você precisa representar ele como vazio, impedindo de
+adicionar novos alunos.
+
+
+Collections.synchronizedSet(set)
+Permite que um conjunto seja compartilhado entre outras
+threads.
+
+Cursos de threads:
+https://cursos.alura.com.br/course/threads-java-1
+https://cursos.alura.com.br/course/threads-java-2
+
+
+
+
+Fonte:
+https://cursos.alura.com.br/course/java-collections/task/14202
+https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html
