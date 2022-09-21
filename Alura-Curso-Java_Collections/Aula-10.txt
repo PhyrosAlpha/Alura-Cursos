@@ -1,0 +1,26 @@
+Aula 10 - Alura - Mapas
+
+Associa uma Key a um Valor.
+ou seja é indexado por uma key que pode ser desde um Int até uma string.
+
+Map<K, V> map = new HashMap<K, V>();
+
+map.put(Key, Value);
+Insere um novo valor relacionado a uma chave, cujo tipo é definido na instanciação.
+
+
+map.get(Key);
+Recupera o o elemento a partir da sua Key.
+
+
+-Se uma chave é repetida, a antiga permance, porém o valor é sobreescrito
+pelo novo valor contido na chave passada, e o antigo acaba sendo esquecido
+pelo Map.
+
+-Bem rápido. Também trabalhar com a tabela de espalhamento.
+
+-Não mantém a ordem de inserção, mas pode ser usado a classe LinkedHashMap resolver
+esse problema.
+
+
+

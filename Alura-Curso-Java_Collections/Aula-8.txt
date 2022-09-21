@@ -1,0 +1,32 @@
+Aula 7 - Alura - Outros sets e iterators
+
+Existem outras implementações de Set com funcionamentos diferentes:
+
+- new LinkedHashSet<>()
+Este garante que o set vai estar organizado na ordem
+que os elementos foram adicionados. Porém ainda não existe o método .get(int);
+
+
+
+- new TreeSet<>()
+Só funciona se a classe tiver o comparable implementado.
+Ele vai ordenar de acordo a implementação do comparable.
+
+Não é tão rápido quanto o HashSet porém ainda é muito mais rápido que o ArrayList.
+
+
+
+
+-Iterators - Antes da versão 5 do java
+Serve para iterar sobre as referências que estão dentro de uma list.
+
+O iterator é percorrido apenas uma vez, até não existir mais itens
+caso contrário a exceção java.util.NoSuchElementException será disparada.
+
+
+
+-Vector
+
+
+
+

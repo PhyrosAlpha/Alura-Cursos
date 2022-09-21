@@ -1,0 +1,26 @@
+Aula 9 - Alura - Qual Collection Usar
+
+
+Uma collection é uma interface com métodos que trabalhar com um conjunto de objtos.
+
+Entre as classes que implementam essa interface, elas manipulam de forma 
+diferente os objetos dessa lista.
+
+
+Uma forma defensiva caso exsistir dúvidas de qual collection usar, é utilizar
+a interface collection, pois sendo o mais genérico possível, te permite alterar
+qual vc precisa usar sem muitos problemas.
+
+
+
+----Obs do instrutor---
+Provavelmente, caso a modelagem do sistema ainda não esteja bem definida, o desenvolvedor irá utilizar a 
+interface Collection<E>. Dessa maneira, terá acesso aos métodos básicos de todas as implementações, 
+como size(), add(), remove() e contains(). Conforme for sentindo necessidade em algo específico, o desenvolvedor fará poucas mudanças em seu código.
+
+Caso sinta necessidade de fazer uma requisição a um elemento específico através da sua posição, 
+trocará de Collection<E> para List<E>. Caso perceba que ordem não importa, porém é necessária uma 
+busca bem rápida (e sem repetições), um Set<E> é mais apropriado.
+
+Enquanto não sentir essa necessidade, provavelmente a Collection<E> será a melhor escolha.
+------------------------

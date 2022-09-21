@@ -1,4 +1,4 @@
-package br.com.alura;
+package br.com.alura.ex;
 
 import java.util.Collections;
 import java.util.Set;

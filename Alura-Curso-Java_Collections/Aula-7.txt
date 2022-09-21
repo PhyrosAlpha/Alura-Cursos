@@ -19,7 +19,7 @@ Portanto você define quando dois objetos são iguais ao sobreescrever o método
 
 
 Porém ao utilizar o .contains(elemento), não funcionará, pois o set funciona de uma maneira diferente
-, utilizando uma tabela de espalhamento em do método sequencial do list. A lógica do contains do set
+, utilizando uma tabela de espalhamento em vez do método sequencial do list. A lógica do contains do set
 é diferente, utiliza o conceito de Hash ou número mágico pra performar a procura.
 
 
@@ -34,7 +34,7 @@ Elemento5 é igual ao elemento 5?
 Sequencial.
 
 
-Ao utilizar containt com Set:
+Ao utilizar contains com Set:
 
 
 Hash - 1
