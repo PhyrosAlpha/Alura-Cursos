@@ -1,0 +1,14 @@
+@mixin cursive_letter($color, $size){
+    color: $color;
+    font-family: Pacifico, cursive;
+
+    @if $size {
+        font-size: $size;
+    }
+};
+
+@mixin subtitle(){
+    font-weight: 100;
+    font-size: 1.75rem;
+    color: #595959;
+}
